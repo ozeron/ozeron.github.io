@@ -1,5 +1,6 @@
 window.QUIZES = {
-  'default': "<div data-fsid='e.589f8953090c6f010096c1bc' data-width='100%' data-height='auto'></div>"
+  'default': "<div data-fsid='e.589f8953090c6f010096c1bc' data-width='100%' data-height='auto'></div>",
+  'vegan': '<div data-fsid="e.589f8953090c6f010096c0f9" data-width="100%" data-height="auto"></div>'
 };
 
 $('#quiz').ready(function(){
