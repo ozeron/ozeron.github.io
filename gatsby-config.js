@@ -15,6 +15,9 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-sitemap'
+    },
+    {
+      resolve: 'gatsby-plugin-favicon'
     }
   ],
   // Customize your site metadata:
