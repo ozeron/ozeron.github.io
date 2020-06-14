@@ -12,6 +12,9 @@ module.exports = {
         siteUrl: `https://alexlapchenko.com`,
         stripQueryString: true,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap'
     }
   ],
   // Customize your site metadata:
