@@ -6,6 +6,13 @@ module.exports = {
         avatar: 'avatar.jpg'
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://alexlapchenko.com`,
+        stripQueryString: true,
+      },
+    }
   ],
   // Customize your site metadata:
   siteMetadata: {
