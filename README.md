@@ -1,3 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2dd84289-a46f-493e-9438-5dad414c0464/deploy-status)](https://app.netlify.com/sites/suspicious-ramanujan-9803b3/deploys)
+
+To deploy go to Netlify.
+
+
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
