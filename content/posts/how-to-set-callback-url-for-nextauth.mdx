@@ -1,0 +1,19 @@
+---
+title: How to learn 10x more with reading 2x less?
+date: 2020-11-27
+image: 'https://images.unsplash.com/photo-1498084393753-b411b2d26b34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80'
+imageAlt: Laptop on a desk with VS Code open.
+---
+When you try to setup next auth and receive the following error.
+
+```
+[next-auth][error][signin_oauth_error] {
+  statusCode: 403,
+  data: `<?xml version='1.0' encoding='UTF-8'?><errors><error code="415">Callback URL not approved for this client application. Approved callback URLs can be adjusted in your application settings</error></errors>`
+}
+```
+
+You need to setup callback in format:
+
+https://domain/api/auth/callback/[provider]
+
