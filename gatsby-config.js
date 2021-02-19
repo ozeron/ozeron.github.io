@@ -25,6 +25,7 @@ module.exports = {
     title: `Tech, productivity and life.`,
     author: `Alex Lapchenko`,
     description: `My site description...`,
+    siteUrl: `https://alexlapchenko.com`,
     social: [
       {
         name: `twitter`,
