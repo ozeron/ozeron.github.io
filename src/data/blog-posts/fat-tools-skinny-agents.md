@@ -1,10 +1,11 @@
 ---
-title: Fat Tools, Skinny Agents: Building Smarter Tools for LLM Agents
+title: Fat Tools, Skinny Agents. Building Smarter Tools for LLM Agents
 slug: fat-tools-skinny-agents
 publishDate: 19 Jul 2025
-description: Fat Tools Skinny Agents
+description: API wrappers are not enough for agents
 ---
-## When API Wrappers Aren’t Enough
+
+# When API Wrappers Aren’t Enough
 
 When I first started connecting a large language model (LLM) agent to external services, I did the obvious thing: wrap each service’s API and let the agent call it. It sounds straightforward – just give the agent a function for each API endpoint – but in practice, this approach turned out **messy and brittle**. I quickly realized that simply wrapping APIs isn’t enough. These AI agents are not deterministic computer programs; they’re stochastic word-predictors that can **misinterpret instructions, omit fields, or produce slightly off-kilter inputs**. A naïve tool that assumes perfect inputs from the agent will frequently break. In other words, building tools for agents is tricky, and requires a mindset shift. We need what I’d call **“agent-native” tools** – tools designed from the ground up to play nicely with an LLM’s quirks and capabilities.
 
