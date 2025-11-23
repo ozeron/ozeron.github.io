@@ -176,7 +176,6 @@ pre {
 /* Utilities */
 .container {
   max-width: var(--container-width);
-  margin: 0 auto;
   padding: 0 24px;
   text-align: left;
 }
@@ -219,4 +218,52 @@ input[name='theme-toggle'] {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+/* Doodle Text Decorations */
+.doodle-underline {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.doodle-underline::after {
+  content: "";
+  position: absolute;
+  left: -0.08em;
+  right: -0.08em;
+  bottom: -0.2em;
+  height: 0.35em;
+  background: var(--accent-color);
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: -1;
+  transform: skewY(-1deg);
+}
+
+.doodle-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.doodle-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0.05em -0.15em;
+  background: rgba(255, 230, 150, 0.7);
+  border-radius: 999px;
+  transform: rotate(-1.5deg);
+  z-index: -1;
+  pointer-events: none;
+}
+
+:root.theme-dark .doodle-highlight::before {
+  background: rgba(255, 200, 100, 0.3);
+}
+
+@media (max-width: 640px) {
+  .doodle-underline::after {
+    bottom: -0.1em;
+    height: 0.25em;
+  }
 }
