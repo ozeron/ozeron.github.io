@@ -40,9 +40,8 @@ const { title, description, permalink, current } = Astro.props;
     flex: 1;
     position: relative;
     margin: 0 auto;
-    max-width: 1400px;
-    padding: 1em 2em;
-    box-sizing: border-box;
+    max-width: var(--container-width); /* Use variable */
+    padding: 2em 1em; /* More vertical space */
     width: 100%;
     display: flex;
     flex-direction: column;

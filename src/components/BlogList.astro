@@ -6,7 +6,6 @@ const { posts } = Astro.props;
 ---
 
 <div class="container">
-  <h1>Blog</h1>
   {posts.map((post, index) => {
     const href = `/blog/${post.data.slug}`;
     return (
