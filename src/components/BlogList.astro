@@ -26,20 +26,48 @@ const { posts } = Astro.props;
 </div>
 
 <style>
-  h2,
+  .post-item {
+    margin: 2em 0;
+  }
+
+  h2 {
+    font-family: var(--font-family-serif);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+  }
+
+  h2 a {
+    text-decoration: none;
+  }
+
+  h2 a:hover {
+    color: var(--accent-color);
+  }
+
+  .post-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: var(--text-main);
+    margin-bottom: 0.75em;
+  }
+
   .post-item-footer {
     font-family: var(--font-family-sans);
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.85em;
   }
 
   .post-item-date {
     color: var(--text-secondary);
     text-align: left;
     text-transform: uppercase;
-    margin-right: 16px;
+    letter-spacing: 0.05em;
   }
 
   hr {
-    margin: 60px auto;
+    margin: 3em 0;
+    opacity: 0.3;
   }
 </style>
