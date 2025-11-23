@@ -3,8 +3,8 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogList from '../components/BlogList.astro';
 
-const title = 'My Astro Blog';
-const description = 'The perfect starter for your perfect blog.';
+const title = 'Alex Lapchenko';
+const description = 'Notes on AI and tech.';
 const permalink = Astro.site.href;
 
 let allPosts = await getCollection('posts');
@@ -14,7 +14,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.data.publishDate).valueOf() - new 
 <BaseLayout title={title} description={description} permalink={permalink}>
   <div class="">
     <div class="home-copy">
-      <h1>Blog</h1>
+      <h1>Notes</h1>
       <p>Writing about technology, design, and everything in between.</p>
     </div>
   </div>
