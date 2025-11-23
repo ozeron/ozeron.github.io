@@ -19,14 +19,14 @@ const permalink = `${Astro.site.href}blog/${slug}`;
 const { Content } = await render(post)
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink} current="blog">
-  <header>
-    <p>{publishDate} ~ {readingTimeEstimate}</p>
-    <h1>{title}</h1>
-    <hr />
-  </header>
+<BaseLayout title={title} description={description} permalink={permalink}>
   <div class="container">
-    <article class="content">
+    <header>
+      <p class="post-meta">{publishDate} ~ {readingTimeEstimate}</p>
+      <h1>{title}</h1>
+      <hr class="header-divider" />
+    </header>
+    <article class="content editorial-content">
       <Content />
     </article>
     <hr />
@@ -37,21 +37,40 @@ const { Content } = await render(post)
 <style>
   header {
     text-align: center;
+    margin-bottom: 3em;
   }
 
   header h1 {
-    margin-bottom: 0.7em;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
 
-  header p {
+  .post-meta {
     color: var(--text-secondary);
     text-transform: uppercase;
     font-family: var(--font-family-sans);
     font-weight: 600;
+    font-size: 0.85em;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em;
   }
 
-  header hr {
-    min-width: 100px;
-    width: 30%;
+  .header-divider {
+    width: 100px;
+    margin: 2em auto;
+    opacity: 0.3;
+  }
+
+  .content {
+    max-width: 65ch;
+    margin: 0 auto;
+  }
+
+  hr {
+    margin: 4em auto;
+    opacity: 0.3;
   }
 </style>
