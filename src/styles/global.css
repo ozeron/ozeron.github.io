@@ -8,6 +8,7 @@
   /* Swiss Red Accent */
 
   --font-family-sans: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-family-serif: 'Merriweather', serif;
 
   --spacing-unit: 8px;
   --container-width: 800px;
@@ -41,7 +42,7 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-serif);
   font-size: 18px;
   /* Larger base size for reading */
   line-height: 1.5;
@@ -57,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-serif);
   font-weight: 700;
   line-height: 1.1;
   margin: 2em 0 0.5em 0;
@@ -123,6 +124,28 @@ blockquote {
   padding-left: 1.5em;
   font-size: 1.25em;
   font-style: italic;
+}
+
+/* Editorial Design */
+.editorial-content {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
+.editorial-content p {
+  margin-bottom: 1.75em;
+}
+
+/* Drop Cap */
+.drop-cap>p:first-of-type::first-letter {
+  float: left;
+  font-size: 4.5em;
+  line-height: 0.8;
+  margin-right: 0.15em;
+  margin-top: 0.1em;
+  font-family: var(--font-family-serif);
+  font-weight: 700;
+  color: var(--text-main);
 }
 
 /* Code */
